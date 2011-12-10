@@ -21,7 +21,7 @@ Author URI: http://ihacklog.com/
  */
 
 /*
- Copyright 2011  荒野无灯
+			Copyright 2011  荒野无灯
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

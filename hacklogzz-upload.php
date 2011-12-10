@@ -22,7 +22,7 @@ if (file_exists( $bootstrap_file ))
 else
 {
 	echo '<p>Failed to load bootstrap.</p>';
-	exit;
+	exit();
 }
 
 /*Check Whether User Can upload_files*/
