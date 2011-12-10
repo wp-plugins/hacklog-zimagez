@@ -1,6 +1,6 @@
 <?php
 /*
- Plugin Name: Hacklog ZimageZ
+Plugin Name: Hacklog ZimageZ
 Plugin URI: http://ihacklog.com/?p=5072
 Description: upload image to ZimageZ via WordPress.
 Version: 1.0.0
