@@ -26,7 +26,6 @@ else
 }
 
 /*Check Whether User Can upload_files*/
-
 if (!current_user_can('upload_files'))
 	wp_die(__('You do not have permission to upload files.'));
 
