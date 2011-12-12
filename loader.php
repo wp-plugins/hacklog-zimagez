@@ -3,7 +3,7 @@
 Plugin Name: Hacklog ZimageZ
 Plugin URI: http://ihacklog.com/?p=5072
 Description: upload image to ZimageZ via WordPress.
-Version: 1.0.0
+Version: 1.0.1
 Author: <a href="http://ihacklog.com/">荒野无灯</a>
 Author URI: http://ihacklog.com/
 */

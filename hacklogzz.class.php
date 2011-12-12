@@ -64,7 +64,7 @@ class hacklogzz
 		$admin_icon = WP_PLUGIN_URL . '/hacklog-zimagez/images/icon.png';
 		if (is_ssl())
 			$url = str_replace('http://', 'https://', $url);
-		echo '<a href="' . $url . '" class="thickbox" title="' . __('Upload image to ZimageZ', self::textdomain) . '"><img src="' . $admin_icon . '" alt="' . __('Add Download', self::textdomain) . '"></a>';
+		echo '<a href="' . $url . '" class="thickbox" title="' . __('Hacklog ZimageZ', self::textdomain) . '"><img src="' . $admin_icon . '" alt="' . __('Add Download', self::textdomain) . '"></a>';
 	}
 	
 	/**

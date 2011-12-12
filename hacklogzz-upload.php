@@ -39,47 +39,7 @@ if( !hacklogzz::get_session_key(hacklogzz::get_opt('login'),hacklogzz::get_opt('
 ################################################################################
 // REPLACE ADMIN URL
 ################################################################################
-
-if (function_exists('admin_url'))
-{
-	wp_admin_css_color('classic', __('Blue'), admin_url("css/colors-classic.css"), array('#073447', '#21759B', '#EAF3FA', '#BBD8E7'));
-	wp_admin_css_color('fresh', __('Gray'), admin_url("css/colors-fresh.css"), array('#464646', '#6D6D6D', '#F1F1F1', '#DFDFDF'));
-}
-else
-{
-	wp_admin_css_color('classic', __('Blue'), get_bloginfo('wpurl') . '/wp-admin/css/colors-classic.css', array('#073447', '#21759B', '#EAF3FA', '#BBD8E7'));
-	wp_admin_css_color('fresh', __('Gray'), get_bloginfo('wpurl') . '/wp-admin/css/colors-fresh.css', array('#464646', '#6D6D6D', '#F1F1F1', '#DFDFDF'));
-}
-
-wp_enqueue_script('common');
-wp_enqueue_script('jquery-color');
-
-
-// do not show the admin_bar 
-show_admin_bar( false );
-?>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php do_action('admin_xml_ns'); ?> <?php language_attributes(); ?>>
-	<head>
-		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php echo get_option('blog_charset'); ?>" />
-		<title><?php bloginfo('name') ?> &rsaquo; hacklog-ZimageZ &#8212; WordPress</title>
-<?php
-wp_enqueue_style('global');
-wp_enqueue_style('wp-admin');
-wp_enqueue_style('colors');
-wp_enqueue_style('media');
-?>
-		<script type="text/javascript">
-			//<![CDATA[
-			function addLoadEvent(func) {if ( typeof wpOnload!='function'){wpOnload=func;}else{ var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}}
-			//]]>
-		</script>
-<?php
-do_action('admin_print_styles');
-do_action('admin_print_scripts');
-do_action('admin_head');
-
+iframe_header( __('Hacklog ZimageZ',hacklogzz::textdomain), false );
 ?>
 
 
@@ -92,9 +52,6 @@ do_action('admin_head');
 					};
 					/* ]]> */
 	</script>
-		
-	</head>
-	<body id="media-upload" style="width:640px;height:400px;">
 		<?php
 		if( isset($_POST['do_upload']))
 		{
@@ -118,11 +75,5 @@ do_action('admin_head');
 		?>
 
 <?php
-do_action('admin_footer');
-do_action('admin_print_footer_scripts');
-do_action("admin_footer-" . $GLOBALS['hook_suffix']);
+iframe_footer();
 ?>
-				
-	</body>
-</html>
-

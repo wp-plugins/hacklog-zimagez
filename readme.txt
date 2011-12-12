@@ -4,7 +4,7 @@ Donate link: http://ihacklog.com/donate
 Tags: zimagez,image
 Requires at least: 3.2.1
 Tested up to: 3.2.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 
 == Description ==
 
@@ -39,5 +39,7 @@ With Hacklog ZimageZ plugin,you can upload image in WordPress easily by click th
 = 1.0.0 =
 * released the first version.
 
+= 1.0.1 =
+* optimized the code(use iframe_footer() and iframe_header() in iframe page.)
 
 == Arbitrary section ==
